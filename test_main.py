@@ -1,10 +1,9 @@
 import unittest
 class MoviesLibrary:
     def __init__(self, genres):
-        movies_list = []
         self.data = {}
         for genre in genres:
-            self.data[genre] = movies_list
+            self.data[genre] = []
 
     def add_movie(self, genre, title):
         self.data[genre].append(title)
